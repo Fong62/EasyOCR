@@ -1,8 +1,8 @@
 from openai import OpenAI
-from config import OPENAI_API_KEY, MODEL_NAME
+from config import OPENAI_API_KEY, MODEL_NAME, GEMINI_API_KEY
 from google import genai
 
-client = genai.Client()
+client = genai.Client(api_key=GEMINI_API_KEY)
 def correct_ocr_text_gemini(ocr_text):
    prompt = f"""
       Bạn là hệ thống sửa lỗi văn bản OCR tiếng Việt.

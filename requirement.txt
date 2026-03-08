@@ -4,3 +4,4 @@ opencv-python
 torch
 openai
 python-dotenv
+google-genai
