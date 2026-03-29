@@ -33,8 +33,10 @@ Dự án minh chứng khả năng làm việc với các bài toán **Computer V
 
 ## 💡 Hướng dẫn sử dụng (Usage)
 1. Đặt hình ảnh bạn muốn trích xuất văn bản vào thư mục images của dự án.
-2. Mở terminal/command prompt và chạy file mã nguồn chính:
-    python main.py
+2. Mở terminal/command prompt và chạy lệnh app.py để khởi chạy EasyOCR:
+    python app.py
+4. Mở terminal/command prompt và chạy lệnh sau để test ảnh:
+    python test.py
 3. Kết quả MSSV được trích xuất sẽ hiển thị trực tiếp trên Terminal hoặc trả về JSON qua API.
 
 ## 👨‍💻 Tác giả (Author)
