@@ -1,12 +1,6 @@
 from flask import Flask, request, jsonify
-<<<<<<< HEAD
 import os
 from ocr_corrector import correct_ocr_text_gemini
-=======
-import easyocr
-import os
-from ocr_corrector import correct_ocr_text_gemini, correct_ocr_text_openai
->>>>>>> b6e7b9b16786bc4aeb8c8b69da2a301248ebd0e3
 from ocr_reader import process_image
 app = Flask(__name__)
 
@@ -27,11 +21,7 @@ def ocr():
 
     try:
         results = process_image(filepath)
-<<<<<<< HEAD
         corrected_text = correct_ocr_text_gemini(results)
-=======
-        corrected_text = correct_ocr_text_gemini(results), 
->>>>>>> b6e7b9b16786bc4aeb8c8b69da2a301248ebd0e3
        
         print("Raw test")
         print(results)
@@ -39,11 +29,7 @@ def ocr():
         print(corrected_text)
         
         return jsonify({
-<<<<<<< HEAD
             "ocr_text": results,
-=======
-            # "ocr_text": results,
->>>>>>> b6e7b9b16786bc4aeb8c8b69da2a301248ebd0e3
             "corrected_text": corrected_text
         })
        
