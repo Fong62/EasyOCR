@@ -4,7 +4,7 @@ import easyocr
 import imutils
 import sys
 import os
-
+reader = easyocr.Reader(['vi'], gpu=True)
 def extract_text(image_path):
     """Hàm chính để trích xuất văn bản từ ảnh, trả về string"""
     # Kiểm tra và đọc ảnh
@@ -35,7 +35,7 @@ def extract_text(image_path):
     final = cv.dilate(closing3, dilation_kernel, iterations=1)
     
     # Nhận diện văn bản (phương pháp 3)
-    reader = easyocr.Reader(['vi'], gpu=True)
+   
     results = reader.readtext(img_rgb, detail=1)
     
     # Xử lý và trả về kết quả dưới dạng string

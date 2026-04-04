@@ -1,0 +1,56 @@
+## Visual Studio 
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## .NET Build outputs
+bin/
+obj/
+
+## Azure Publish profiles
+*.pubxml
+*.azureauth
+.env
+.env.*
+*.pem
+
+# Môi trường ảo (Virtual Environments)
+venv/
+env/
+.venv/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# 2. Cache của Python (Tránh lỗi Merge Conflict)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# =========================
+# 3. Thư mục của IDE & Hệ điều hành
+# =========================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# =========================
+# 4. Logs & Database tạm
+# =========================
+*.log
+*.sqlite3
